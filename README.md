@@ -1,6 +1,6 @@
 # OnlineRetailEDA
 ## Project Overview
-Exploratory Data Analysis of a publicly available dataset containing sales information for a UK based retailer. The goal of the analysis is to explore the weekly revenue behaviour and assess suitability for time series modeling and forecasting.
+Exploratory Data Analysis of a publicly available dataset containing sales information for a UK based retailer. The goal of the analysis is to explore the weekly revenue behaviour and assess suitability for time series modeling. The focuse is on understanding the trend, variability and dependence over time; no forecasting or model fitting is performed in this project.
 ## Dataset
 Name: Online Retail Dataset
 Source: UCI Machine Learning Repository
@@ -30,12 +30,21 @@ Invoices that were cancellations, broken items or debt adjustment have been omit
 - Partial Autocorrelation
 
 ## Key Findings
+- The raw series shows a clear upward trend, indicating non-stationary behavior.
+- Variability increases with the level of the series, suggesting time-varying variance.
+- Rolling statistics confirm that both mean and variance change over time prior to transformation.
+- Log transformation has proven to reduce scale effects and to stabilise the variance. However, it did not remove the underlying trend.
+- First Order Differencing effectively removes the long-term trend,  resulting in a more stable mean and variance.
+- Autocorrelation analysis after transformation shows that long-range dependence has been removed, with only weak short-term effects remaining.
+- Partial Autocorrelation indicates no significant direct autoregressive dependence after transformation.
 ## Stationarity Conclusion
+
 ## Limitations
-Only a single aggregation has been done on the series without exploration of monthly movements.
-Since the goal of the project is analysis no forecasting or model evaluation has been done.
+- Analysis focuses on a single aggregation of the series without exploration of any other aggregation levels.
+- No external variables have been incorporated into the analysis.
+- The project is limited to exploratory analysis and does not include forecasting or model evaluation.
 ## Next Steps
-This project has been meant to build on statistical foundations of time series analysis to eventually lead to ARIMA modeling. 
+Building on the stationarity diagnostics established in this analysis, future work will include fitting statistical forecasting models such as ARIMA and SARIMA. Subsequent projects will also explore machine learning-based approaches for time series prediction and compare their performance against traditional statistical baselines.
 ## Tools Used
 - Python
 - Pandas
