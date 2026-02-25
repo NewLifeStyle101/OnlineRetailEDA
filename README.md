@@ -6,7 +6,7 @@ Name: Online Retail Dataset
 Source: UCI Machine Learning Repository
 Time Period: December 2010 until December 2011
 Link: https://archive.ics.uci.edu/dataset/352/online+retail
-Description: The dataset consists of 6 features 
+Description:
 - InvoiceNo which is a 6 digit number assigned to each transaction if it starts with a c it represents a cancellation
 - StockCode a 5 digit number unique to each distinct product
 - Description which is the product name
