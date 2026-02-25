@@ -2,11 +2,11 @@
 ## Project Overview
 Exploratory Data Analysis of a publicly available dataset containing sales information for a UK based retailer. The goal of the analysis is to explore the weekly revenue behaviour and assess suitability for time series modeling. The focuse is on understanding the trend, variability and dependence over time; no forecasting or model fitting is performed in this project.
 ## Dataset
-Name: Online Retail Dataset
-Source: UCI Machine Learning Repository
-Time Period: December 2010 until December 2011
-Link: https://archive.ics.uci.edu/dataset/352/online+retail
-Description:
+- Name: Online Retail Dataset
+- Source: UCI Machine Learning Repository
+- Time Period: December 2010 until December 2011
+- Link: https://archive.ics.uci.edu/dataset/352/online+retail
+### Description:
 - InvoiceNo which is a 6 digit number assigned to each transaction if it starts with a c it represents a cancellation
 - StockCode a 5 digit number unique to each distinct product
 - Description which is the product name
@@ -38,7 +38,8 @@ Invoices that were cancellations, broken items or debt adjustment have been omit
 - Autocorrelation analysis after transformation shows that long-range dependence has been removed, with only weak short-term effects remaining.
 - Partial Autocorrelation indicates no significant direct autoregressive dependence after transformation.
 ## Stationarity Conclusion
-
+As already established in the key findings the raw series has exhibited non-stationary behavior which is supported by the rolling statistics as their is a visible upward trend and the variance changes with time.
+After applying log transformation and first order differencing, the rolling statistics indicate improved stability in both mean and variance. Autocorrelation and partial autocorrelation diagnostics further suggest that long-term effects have been removed, with only short term effects remaining. Together, these findings indicate that the transformed series characteristics are consistent with approximate stationarity and thus is suitable for subsequent time-series modeling. 
 ## Limitations
 - Analysis focuses on a single aggregation of the series without exploration of any other aggregation levels.
 - No external variables have been incorporated into the analysis.
