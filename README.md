@@ -39,7 +39,7 @@ Invoices that were cancellations, broken items or debt adjustment have been omit
 - Partial Autocorrelation indicates no significant direct autoregressive dependence after transformation.
 ## Stationarity Conclusion
 As already established in the key findings the raw series has exhibited non-stationary behavior which is supported by the rolling statistics as there is a visible upward trend and the variance changes with time.
-After applying log transformation and first order differencing, the rolling statistics indicate improved stability in both mean and variance. Autocorrelation and partial autocorrelation diagnostics further suggest that long-term effects have been removed, with only short-term effects remaining. Together, these findings indicate that the transformed series characteristics are consistent with approximate stationarity and thus is suitable for subsequent time-series modeling. 
+After applying log transformation and first order differencing, the rolling statistics indicate improved stability in both mean and variance. Autocorrelation and partial autocorrelation diagnostics further suggest that long-term effects have been removed, with only short-term effects remaining. Together, these findings indicate that the transformed series characteristics are consistent with approximate stationarity and thus is suitable for subsequent time-series modelling. 
 ## Limitations
 - Analysis focuses on a single aggregation of the series without exploration of any other aggregation levels.
 - No external variables have been incorporated into the analysis.
