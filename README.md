@@ -41,9 +41,9 @@ Invoices that were cancellations, broken items or debt adjustment have been omit
 As already established in the key findings the raw series has exhibited non-stationary behavior which is supported by the rolling statistics as there is a visible upward trend and the variance changes with time.
 After applying log transformation and first order differencing, the rolling statistics indicate improved stability in both mean and variance. Autocorrelation and partial autocorrelation diagnostics further suggest that long-term effects have been removed, with only short-term effects remaining. Together, these findings indicate that the transformed series characteristics are consistent with approximate stationarity and thus is suitable for subsequent time-series modelling. 
 ## Limitations
-- Analysis focuses on a single aggregation of the series without exploration of any other aggregation levels.
-- No external variables have been incorporated into the analysis.
-- The project is limited to exploratory analysis and does not include forecasting or model evaluation.
+- Analysis focuses on a single aggregation of the series without exploration of any other aggregation levels
+- No external variables have been incorporated into the analysis
+- The project is limited to exploratory analysis and does not include forecasting or model evaluation
 ## Next Steps
 Building on the stationarity diagnostics established in this analysis, future work will include fitting statistical forecasting models such as ARIMA and SARIMA. Subsequent projects will also explore machine learning-based approaches for time series prediction and compare their performance against traditional statistical baselines.
 ## Tools Used
